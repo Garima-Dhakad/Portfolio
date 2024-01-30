@@ -25,15 +25,13 @@ class _MainDashBoardState extends State<MainDashBoard> {
   final ScrollOffsetListener scrollOffsetListener =
       ScrollOffsetListener.create();
 
-  final menuItems = <String>['Home', 'About', 'Services', 'Project', 'Contact'];
+  final menuItems = <String>['Home', 'About', 'Services', 'Project'];
   var menuIndex = 0;
   final screensList = const <Widget>[
     HomePage(),
     AboutMe(),
     MyServices(),
     MyProjects(),
-    ContactMe(),
-    FooterClass(),
   ];
 
   Future scrollTo({required int index}) async {
